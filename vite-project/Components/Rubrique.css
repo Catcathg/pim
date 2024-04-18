@@ -1,0 +1,83 @@
+.recommandations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-family: "Lexend", sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-family: "Lexend", sans-serif;
+}
+
+.tendances {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+}
+
+.voirTout1 {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-family: "Lexend", sans-serif;
+    position: absolute;
+    left: 315px; 
+    margin-top: 5px;
+}
+
+
+.voirTout2 {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-family: "Lexend", sans-serif;
+    position: absolute;
+    left: 310px; 
+    margin-top: 5px;
+}
+
+.rub {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card_rubrique {
+    width: 82px;
+    height: 82px;
+    background-color: gray;
+}
+
+.sell {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 268px;
+    height: 52px;
+    background-color: #FF3D3D;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

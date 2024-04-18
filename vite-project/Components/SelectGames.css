@@ -1,0 +1,35 @@
+.RecoTitle {
+    position: relative;
+    margin-top: 41px;
+}
+
+.rubrique {
+    width: 320px;
+    display: grid;
+    margin: 35px;
+    height: 660px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_games {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.Title_reco {
+    font-size: 20px;
+    font-weight: medium;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 17%; 
+    margin-top: 5px;
+}
+

@@ -1,0 +1,28 @@
+.seller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.profile_seller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+}
+
+.button_message {
+    background-color: #BEBEBE;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 111px;
+    height: 35px;
+}
+
+.container_seller {
+    margin: 0 25px;
+    padding-top: 26px;
+}

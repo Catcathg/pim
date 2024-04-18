@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display&family=Poiret+One&display=swap');
 
-:root {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  margin: 0 auto;
+body {
+  padding: 25px 0px;
+}
 
-  color-scheme: light dark;
-  color: black;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+span {
+  font-size: 14px;
+  font-weight: 200;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-family: "Lexend", sans-serif;
 }
 
 a {
@@ -23,9 +21,6 @@ body {
   margin: 0 auto;
 }
 
-span {
-  color: black;
-}
 
 button {
   border-radius: 8px;
@@ -38,8 +33,6 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-
-
 
 button:focus,
 button:focus-visible {
@@ -59,8 +52,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-
-#root {
-  width: 100%;
 }

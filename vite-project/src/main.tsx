@@ -1,9 +1,9 @@
-import {createRoot} from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import './index.css';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-const rootElement:any = document.getElementById('root');
+const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
@@ -11,3 +11,4 @@ root.render(
     <App />
   </Router>
 );
+

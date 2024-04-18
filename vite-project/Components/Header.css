@@ -1,5 +1,29 @@
-nav {
+.nav {
     height: 76px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 99x;
+}
+
+.community {
+    margin-left: 12px;
+}
+
+.icon_message {
+    margin-left: 12px;
+}
+
+.profile {
+    margin-left: 12px;
+}
+
+.icon_menu {
+    width: 99px;
 }

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display&family=Poiret+One&display=swap');
+
+.deco1 {
+    display: flex;
+    justify-content: end;
+}
+
+.sectionEarthbound {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 390px;
+}
+
+.EarthImage {
+    width: 160px;
+    height: 160px;
+    margin-left: 25px;
+}
+
+.description {
+    margin: 0px 0px 55px 20px;
+    width: 185px;
+    height: 108px;
+}
+
+.container_post {
+    margin-bottom: 25px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-family: "Lexend", sans-serif;
+}
+
+.date {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-family: "Lexend", sans-serif;
+}
+
+.text {
+    margin-left: 25px !important;;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+}
+
+.deco2 {
+    margin: 9px 0px;
+}
+
+.Annonces {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-family: "Lexend", sans-serif;
+    margin: 41px 0px 0px 20px;
+}
+
+.Rectangle {
+    position: relative;
+}
