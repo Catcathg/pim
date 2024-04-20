@@ -38,7 +38,6 @@ function Rubrique() {
                 </div>
                 <div className="tendances">
                     <h2>Tendances</h2>
-                    <img src={DecoPage1} alt="deco" />
                     <a className="voirTout2" href="#">voir tout</a>
                 </div>
                 <div className="rub">
@@ -55,6 +54,7 @@ function Rubrique() {
                         <img src={Banjo} alt="banjo" />
                     </div>
                 </div>
+                <img className="DecoPage1" src={DecoPage1} alt="deco" />
                 <div className="bestGames">
                     <img src={BestGames} alt="best games" />
                 </div>

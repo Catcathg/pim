@@ -18,7 +18,7 @@ function ImageCarousel() {
             <Box
               component="img"
               sx={{
-                width: '600px',
+                width: '372px',
                 height: '150px',
                 objectFit: 'cover'
               }}

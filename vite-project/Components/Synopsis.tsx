@@ -11,10 +11,12 @@ import badges from '../src/assets/Images/badges.png'
 import Deco1 from '../src/assets/Images/decoPage3_n1.png'
 import Deco2 from '../src/assets/Images/decoPage3_n2.png'
 import rectangle from '../src/assets/Images/rectangle.png'
+import BoutonReturn from '../src/assets/Images/boutonReturn.png'
 
 function Earthbound() {
   return (
     <>
+      <div className="boutonReturn"><a href="Games"><img src={BoutonReturn} alt="bouton return" /></a></div>
       <div className="deco1">
         <img src={Deco1} alt="deco" />
       </div>

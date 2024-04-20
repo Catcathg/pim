@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display&family=Poiret+One&display=swap');
 
+.boutonReturn {
+    margin-left: 9px;
+}
+
 .deco1 {
     display: flex;
     justify-content: end;

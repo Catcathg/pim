@@ -1,89 +1,35 @@
-import React from "react";
-import { Paper, Box, Typography, Button } from "@mui/material";
-import Carousel from "react-material-ui-carousel";
+import React from 'react';
+import Carousel from 'react-material-ui-carousel';
+import { Paper, Box } from '@mui/material';
 
-const exampleItems = [
-  {
-    name: "First Item",
-    description: "Description for first item",
-  },
-  {
-    name: "Second Item",
-    description: "Description for second item",
-  },
-  {
-    name: "Third Item",
-    description: "Description for second item",
-  },
-  {
-    name: "Fourth Item",
-    description: "Description for second item",
-  },
-  {
-    name: "Five Item",
-    description: "Description for second item",
-  },
-  {
-    name: "Sixth Item",
-    description: "Description for second item",
-  },
-];
+//images
+import CarouselImage1 from '../src/assets/Images/carousel_image1.png'
+import EarthImage2 from '../src/assets/Images/EarthImage2.png'
+import EarthImage3 from '../src/assets/Images/EarthImage3.png'
 
-const ExampleCarousel = () => {
+const images = [CarouselImage1, EarthImage2, EarthImage3];
+
+function ImageCarousel() {
   return (
-    <Carousel
-      animation="slide"
-      indicators={true}
-      timeout={500}
-      navButtonsAlwaysVisible={true}
-      navButtonsAlwaysInvisible={false}
-      cycleNavigation={true}
-      fullHeightHover={false}
-      sx={{
-        maxWidth: "390px",
-        flexGrow: 1,
-        margin: "auto",
-        mt: 5,
-      }}
-    >
-      {exampleItems.map((item, i) => (
-        <Item key={i} item={item} />
-      ))}
-    </Carousel>
-  );
-};
-
-function Item(props) {
-  return (
-    <Paper
-      sx={{
-        position: "relative",
-        backgroundColor: "grey.100",
-        color: "black",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "76px",
-        display: "flex",
-        flexDirection: "column",
-        borderRadius: "10px",
-        p: 4,
-      }}
-      elevation={10}
-    >
-      <Typography variant="h4">{props.item.name}</Typography>
-      <Typography>{props.item.description}</Typography>
-      <Button
-        variant="contained"
-        color="primary"
-        sx={{ mt: 2, alignSelf: "center" }}
-      >
-        Learn More
-      </Button>
-    </Paper>
+    <Box sx={{ maxWidth: 800, flexGrow: 1, margin: 'auto', mt: 5 }}>
+      <Carousel>
+        {images.map((image, i) => (
+          <Paper key={i} elevation={10}>
+            <Box
+              component="img"
+              sx={{
+                width: '390px',
+                height: '150px',
+                objectFit: 'cover'
+              }}
+              src={image}
+              alt={`Slide ${i}`}
+            />
+          </Paper>
+        ))}
+      </Carousel>
+    </Box>
   );
 }
 
-export default ExampleCarousel;
+export default ImageCarousel;
