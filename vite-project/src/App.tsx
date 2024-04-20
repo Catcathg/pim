@@ -8,6 +8,7 @@ import Games from '../Pages/Games'
 import Earthbound from '../Pages/Earthbound'
 import Announces from '../Pages/Announces'
 import Payment from '../Pages/Payment'
+import Login from '../Pages/Login'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path={'/Earthbound/'} element={<Earthbound />} />
         <Route path={'/Announces/'} element={<Announces />} />
         <Route path={'/Payment/'} element={<Payment />} />
+        <Route path={'/Login/'} element={<Login />} />
         <Route path={'*'} element={<>Erreur 404</>} />
       </Routes>
     </div>

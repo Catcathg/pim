@@ -2,8 +2,8 @@
 const knex = require('knex')(require('./knexfile')['development']);
 
 // Create
-async function createGame(name, image, genre, description) {
-    return await knex('Games').insert({ name, image, genre, description });
+async function createGame(name, image, genre, description, price) {
+    return await knex('Games').insert({ name, image, genre, description, price });
 }
 
 // Read

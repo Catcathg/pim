@@ -2,8 +2,8 @@
 const knex = require('knex')(require('./knexfile')['development']);
 
 // Create
-async function createUser(username, password) {
-    const [id] = await knex('Users').insert({ username, password });
+async function createUser(username, password, rank) {
+    const [id] = await knex('Users').insert({ username, password, rank });
     return getUserById(id)
 }
 
@@ -17,8 +17,8 @@ async function getUserById(id) {
 }
 
 // Update
-async function updateUser(id, username, password) {
-    return await knex('Users').where({ id }).update({ username, password });
+async function updateUser(id, username, password, rank) {
+    return await knex('Users').where({ id }).update({ username, password, rank });
 }
 
 // Delete

@@ -2,8 +2,8 @@
 const knex = require('knex')(require('./knexfile')['development']);
 
 // Create
-async function createAnnounce(brand, model, image) {
-    return await knex('Annonunces').insert({ brand, model, image });
+async function createAnnounce(state, brand, model, image, description) {
+    return await knex('Annonunces').insert({ state, brand, model, image, description });
 }
 
 // Read
