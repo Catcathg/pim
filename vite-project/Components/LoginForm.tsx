@@ -30,6 +30,8 @@ export default function LoginForm() {
                 throw new Error('Identifiants invalides');
             }
 
+            window.location.href = '/vite-project/Pages/Home.tsx';
+
             // Si la réponse est réussie, tu peux effectuer une redirection ou toute autre action nécessaire
             console.log('Authentification réussie !');
         } catch (error) {
