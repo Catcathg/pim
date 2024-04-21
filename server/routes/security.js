@@ -11,7 +11,7 @@ router.post("/register", async (req, res) => {
     }
 });
 
-router.post("/login", async (req, res) => {
+router.post("/Login", async (req, res) => {
     try {
         const user = await User.login(req.body);
         if (!user) {

@@ -14,25 +14,32 @@ export default function LoginForm() {
         setPassword(event.target.value);
     };
 
+    async function postJSON(data) {
+        try {
+            const response = await fetch("http://localhost:5173/login", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            });
+
+            const result = await response.json();
+            console.log("Success :", result);
+        } catch (error) {
+            console.error("Error :", error);
+        }
+    }
+
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:3000/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ username, password })
-            });
+            const userData = { username, password };
+            await postJSON(userData);
 
-            if (!response.ok) {
-                throw new Error('Identifiants invalides');
-            }
+            window.location.href = '/Home';
 
-            window.location.href = '/vite-project/Pages/Home.tsx';
-
-            // Si la réponse est réussie, tu peux effectuer une redirection ou toute autre action nécessaire
             console.log('Authentification réussie !');
         } catch (error) {
             setError(error.message);

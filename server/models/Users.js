@@ -1,35 +1,36 @@
-// db.js - Fichier pour gérer les opérations CRUD avec Knex (créer les fonctions d'appel)
-const knex = require('knex')(require('./knexfile')['development']);
+const knex = require("./db");
+
+async function register(userData) {
+  if (await knex("users").where({ username: userData.username }).first()) {
+    throw new Error("Username already exists");
+  }
+  const [id] = await knex("users").insert(userData);
+  return getUserById(id);
+}
+
+function login(credentials) {
+  return knex("users").where(credentials).first();
+}
+
+function getUserById(id) {
+  return knex("users").where({ id }).first();
+}
 
 // Create
 async function createUser(username, password, rank) {
-    const [id] = await knex('Users').insert({ username, password, rank });
-    return getUserById(id)
+  const [id] = await knex('users').insert({ username, password, rank });
+  return getUserById(id);
 }
 
 // Read
 async function getAllUsers() {
-    return await knex.select().from('Users');
-}
-
-async function getUserById(id) {
-    return await knex('Users').where({ id }).first();
-}
-
-// Update
-async function updateUser(id, username, password, rank) {
-    return await knex('Users').where({ id }).update({ username, password, rank });
-}
-
-// Delete
-async function deletUser(id) {
-    return await knex('Users').where({ id }).del();
+  return await knex.select().from('users');
 }
 
 module.exports = {
-    createUser,
-    getAllUsers,
-    getUserById,
-    updateUser,
-    deletUser,
+  register,
+  login,
+  getUserById,
+  createUser,
+  getAllUsers,
 };
