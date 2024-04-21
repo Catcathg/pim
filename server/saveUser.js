@@ -25,9 +25,9 @@ async function main() {
     const allUsers = await getAllUsers();
     console.log('Voici tous les utilisateurs:', allUsers);
     
-    const userIdToUpdate = 1;
-    const updatedUser = await updateUser(userIdToUpdate, "NouveauNom", "NouveauMotDePasse");
-    console.log('Utilisateur mis à jour avec succès:', updatedUser);
+    //const userIdToUpdate = 1;
+    //const updatedUser = await updateUser(userIdToUpdate, "NouveauNom", "NouveauMotDePasse");
+    //console.log('Utilisateur mis à jour avec succès:', updatedUser);
     
     const userIdToDelete = 2;
     await deleteUser(userIdToDelete);
